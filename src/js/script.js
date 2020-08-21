@@ -1,8 +1,8 @@
 goToTop = document.getElementById("goToTop");
 
-
+scrollFunction();
 window.onscroll = function () { scrollFunction() };
-
+window.onload = function () { scrollFunction() };
 function scrollFunction() {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         goToTop.style.display = "block";
