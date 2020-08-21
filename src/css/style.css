@@ -76,6 +76,12 @@ body {
 /* ................ */
 /* Carousel CSS */
 
+.carousel-inner {
+    height:100% !important;
+    Min-height:100vh !important;
+    max-height:auto !important;
+}
+
 .carousel-inner img{
     filter: grayscale(50%);
     filter: brightness(50%);
