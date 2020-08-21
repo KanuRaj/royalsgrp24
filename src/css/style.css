@@ -85,7 +85,7 @@ body {
     filter: grayscale(50%);
     filter: brightness(50%);
     width:100%;
-    height:100vh;
+    height:50vh;
 }
 .carousel-caption hr {
     padding: 2px;
