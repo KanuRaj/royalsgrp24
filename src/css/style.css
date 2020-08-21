@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+
+
+/* navbar CSS */
+#goToTop {
+    border: none;
+    background: #d62828;
+    color: #d1d646;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 5;
+    outline: none;
+    transition-duration: .5s;
+}
+
+
+
+
+/* ......... */
+/* Cards CSS */
+.card, .card .btn, .card img, .card-body, .overlay, .card-image {
+    border-radius: 10px;
+}
+.card .card-title {
+    font-size: 2rem;
+}
+.card-image,.card {
+    overflow: hidden;
+}
+.card img:hover{
+    animation: zoomEffect 1s;
+}
+.card-text {
+    font-size: 1.5rem !important;
+    font-weight: 500;
+}
+/* .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #e1f0c4;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+.card:hover .overlay {
+    height: 30%;
+  } */
+/* ......... */
+
+
+
+
+/* ................ */
+/* Carousel CSS */
+
+.carousel-inner img{
+    filter: grayscale(50%);
+    filter: brightness(50%);
+}
+
+.carousel-caption hr {
+    padding: 2px;
+    width: 60%;
+    margin: 3px auto;
+    border-radius: 3px;
+    background: #f97068;
+    animation: goWide 1.5s;
+}
+.carousel-caption h3 {
+    color: #edf2ef !important;
+}
+/* .............. */
+
+
+
+
+/* ................. */
+/* KeyFrames */
+@keyframes goWide{
+    0%{width: 0%;}
+    50%{width: 0%;}
+    100%{width: 60%;}
+}
+@keyframes zoomEffect{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.05);}
+}
+
+
+
+/* Media Queries */
+@media only screen and (min-width:768px){
+    .carousel-caption {
+        bottom: 50%;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .carousel-caption h3 {
+        font-size: 3rem !important;
+    }
+    .carousel-caption p {
+        font-size: 1.3rem !important;
+    }
+    .carousel-inner {
+        height: 90vh !important;
+    }
+    .navbar-brand {
+        margin-right: 30px;
+    }
+    .navbar .active .nav-link{
+        font-weight: bold;
+        border-bottom: 3px solid #f8615a;
+    }
+}
