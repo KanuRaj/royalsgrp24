@@ -10,7 +10,7 @@ function scrollFunction() {
         goToTop.style.display = "none";
     }
 }
-
+scrollFunction();
 
 goToTop.addEventListener("click", () => {
     document.body.scrollTop = 0;
