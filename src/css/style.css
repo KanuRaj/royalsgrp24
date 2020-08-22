@@ -132,11 +132,11 @@ body {
         width: 60%;
     }
 }
-@media screen and (max-width: 800px) and (min-width: 450px) {
+
+
+/* Device bigger than SmartPhones ( md ) */
+@media screen and (min-width: 450px) {
     .carousel-caption {
-        /* margin: 25% auto; */
-        /* margin-top: 50%; */
-        /* margin-bottom: 10%; */
         bottom: 25%;
         border-radius: 20px;
         background: rgba(0, 0, 0, 0.1);
@@ -161,6 +161,11 @@ body {
         border-bottom: 3px solid #f8615a;
     }
 }
+
+
+
+
+/* Devices Bigger Than Tablets ( lg ) */
 @media screen and (min-width: 800px){
     .carousel {
         height: 90vh !important;
@@ -169,61 +174,15 @@ body {
         display: none;
     }
     .carousel-caption {
-        /* margin: 25% auto; */
         bottom: 30%;
-        border-radius: 20px;
-        background: rgba(0, 0, 0, 0.1);
-    }
-    .carousel-caption h3 {
-        font-size: 3rem !important;
-    }
-    .carousel-caption p {
-        font-size: 1.3rem !important;
-    }
-    /*.carousel {
-        height: 90vh !important;
-    }*/
-    .carousel img {
-        height: 100% !important;
-    }
-    .navbar-brand {
-        margin-right: 30px;
-    }
-    .navbar .active .nav-link{
-        font-weight: bold;
-        border-bottom: 3px solid #f8615a;
     }
 }
+
+
+
+/* Large Laptops ( XL )*/
 @media screen and (min-width: 1100px){
-    .carousel {
-        height: 90vh !important;
-    }
-    #goToTop {
-        display: none;
-    }
     .carousel-caption {
-        /* margin: 25% auto; */
         bottom: 50%;
-        border-radius: 20px;
-        background: rgba(0, 0, 0, 0.1);
-    }
-    .carousel-caption h3 {
-        font-size: 3rem !important;
-    }
-    .carousel-caption p {
-        font-size: 1.3rem !important;
-    }
-    /*.carousel {
-        height: 90vh !important;
-    }*/
-    .carousel img {
-        height: 100% !important;
-    }
-    .navbar-brand {
-        margin-right: 30px;
-    }
-    .navbar .active .nav-link{
-        font-weight: bold;
-        border-bottom: 3px solid #f8615a;
     }
 }
