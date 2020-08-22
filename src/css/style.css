@@ -20,8 +20,10 @@ body {
 #goToTop {
     border: none;
     background: #d62828;
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
     color: #d1d646;
     position: fixed;
     right: 40px;
