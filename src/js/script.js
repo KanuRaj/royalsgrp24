@@ -5,6 +5,11 @@ $(window).on('load', function () {
             $(this).remove();
         });
     }
+    if ($(this).scrollTop() > 100) {
+        $('#goToTop').fadeIn('slow');
+    } else {
+        $('#goToTop').fadeOut();
+    }
 });
 
 
@@ -13,7 +18,7 @@ $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
         $('#goToTop').fadeIn('slow');
     } else {
-        $('#goToTop').fadeOut('slow');
+        $('#goToTop').fadeOut();
     }
 });
 $('#goToTop').click(function () {
