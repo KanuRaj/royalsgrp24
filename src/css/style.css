@@ -133,9 +133,9 @@ body {
     .carousel-caption p {
         font-size: 1.3rem !important;
     }
-    .carousel-inner {
+    /*.carousel-inner {
         height: 90vh !important;
-    }
+    }*/
     .navbar-brand {
         margin-right: 30px;
     }
@@ -146,6 +146,6 @@ body {
 }
 @media only screen and (min-width:1024px){
     .carousel-inner {
-        height: auto !important;
+        height: 90vh !important;
     }
 }
