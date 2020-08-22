@@ -10,13 +10,6 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-.navbar-brand {
-    font-size: 1.8rem;
-}
-.navbar .active .nav-link{
-    /* font-weight: bold; */
-    border-bottom: none !important;
-}
 .no-padding {
     padding: 0 !important;
 }
@@ -38,6 +31,14 @@ body {
     transition-duration: .5s;
 }
 
+.navbar-brand {
+    font-size: 1.8rem;
+}
+.navbar .active .nav-link{
+    /* font-weight: bold; */
+    border-bottom: none !important;
+}
+  
 
 
 
