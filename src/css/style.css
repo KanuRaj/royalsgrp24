@@ -16,6 +16,59 @@ body {
 
 
 
+
+
+
+/* Prelaoder */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #2eca6a;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @-webkit-keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
 /* navbar CSS */
 #goToTop {
     border: none;
@@ -36,6 +89,9 @@ body {
 .navbar-brand {
     font-size: 1.8rem;
 }
+.navbar-brand:hover {
+    color:#00c851 !important;
+}
 
 
 
@@ -50,9 +106,15 @@ body {
 .card-image,.card {
     overflow: hidden;
 }
-.card img:hover{
-    animation: zoomEffect 1s;
+
+.card-image {
+    transition: 1.2s ease-in-out;
+    transform: scale(1);
 }
+.card-image:hover {
+    transform: scale(1.1);
+}
+
 .card-text {
     font-size: 1.4rem !important;
     font-weight: 500;
@@ -105,6 +167,16 @@ body {
 .carousel-caption h3 {
     color: #edf2ef !important;
 }
+.carousel-caption p {
+    animation-delay: 500ms;
+}
+.carousel-caption {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 /* .............. */
 
 
@@ -118,8 +190,16 @@ body {
     100%{width: 60%;}
 }
 @keyframes zoomEffect{
-    0%{transform: scale(1);}
-    100%{transform: scale(1.05);}
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+@keyframes zoomOutEffect{
+    from{transform: scale(1.1);}
+    to{transform: scale(1);}
+}
+@-webkit-keyframes zoomEffect{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
 }
 
 
@@ -134,10 +214,11 @@ body {
 
 /* Device bigger than SmartPhones ( md ) */
 @media screen and (min-width: 450px) {
-    .carousel-caption {
-        bottom: 25%;
+    
+    .carousel-caption-inner {
+        /* bottom: 25%; */
         border-radius: 20px;
-        background: rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.2);
     }
     .carousel-caption h3 {
         font-size: 3rem !important;
@@ -171,7 +252,7 @@ body {
         display: none;
     }
     .carousel-caption {
-        bottom: 30%;
+        top: 54%;
     }
     
 }
@@ -217,10 +298,11 @@ body {
 /* Large Laptops ( XL )*/
 @media screen and (min-width: 1100px){
     .carousel {
-        height: 90vh !important;
+        height: 88vh !important;
     }
     .carousel-caption {
-        bottom: 50%;
+        top: 50%;
+        width: 55%;
     }
     .navbar-brand {
         font-size: 2.5rem;
