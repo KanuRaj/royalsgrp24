@@ -1,23 +1,24 @@
-goToTop = document.getElementById("goToTop");
-
-scrollFunction();
-window.onscroll = function () { scrollFunction() };
-window.onload = function () { scrollFunction() };
-function scrollFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        goToTop.style.display = "block";
-    } else {
-        goToTop.style.display = "none";
+// Preloader
+$(window).on('load', function () {
+    if ($('#preloader').length) {
+        $('#preloader').delay(100).fadeOut('slow', function () {
+            $(this).remove();
+        });
     }
-}
-scrollFunction();
-
-goToTop.addEventListener("click", () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 });
 
-document.querySelector("#goToTop i").addEventListener("click", () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+
+// Back to top button
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+        $('#goToTop').fadeIn('slow');
+    } else {
+        $('#goToTop').fadeOut('slow');
+    }
+});
+$('#goToTop').click(function () {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 0, 'easeInOutExpo');
+    return false;
 });
