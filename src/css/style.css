@@ -23,6 +23,8 @@ body {
 #goToTop {
     border: none;
     background: #d62828;
+    min-width: 40px;
+    min-height: 40px;
     color: #d1d646;
     position: fixed;
     right: 40px;
@@ -77,8 +79,8 @@ body {
 /* Carousel CSS */
 
 .carousel-inner {
-    height:100% !important;
-    max-height:auto !important;
+    height:40vh !important;
+    /* max-height:auto !important; */
 }
 
 .carousel-inner img{
@@ -123,7 +125,7 @@ body {
         display: none;
     }
     .carousel-caption {
-        bottom: 50%;
+        bottom: 25%;
         border-radius: 20px;
         background: rgba(0, 0, 0, 0.1);
     }
@@ -136,6 +138,9 @@ body {
     /*.carousel-inner {
         height: 90vh !important;
     }*/
+    .carousel-inner img {
+        height: auto !important;
+    }
     .navbar-brand {
         margin-right: 30px;
     }
@@ -144,7 +149,7 @@ body {
         border-bottom: 3px solid #f8615a;
     }
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:768px) and (max-width:1440px){
     .carousel-inner {
         height: 90vh !important;
     }
