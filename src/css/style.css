@@ -85,12 +85,12 @@ body {
 /* ................ */
 /* Carousel CSS */
 
-.carousel-inner {
+.carousel {
     height:40vh !important;
     max-height:auto !important;
 }
 
-.carousel-inner img{
+.carousel img{
     filter: grayscale(50%);
     filter: brightness(50%);
     width:100%;
@@ -134,6 +134,9 @@ body {
 }
 @media screen and (max-width: 800px) and (min-width: 450px) {
     .carousel-caption {
+        /* margin: 25% auto; */
+        /* margin-top: 50%; */
+        /* margin-bottom: 10%; */
         bottom: 25%;
         border-radius: 20px;
         background: rgba(0, 0, 0, 0.1);
@@ -144,10 +147,10 @@ body {
     .carousel-caption p {
         font-size: 1.3rem !important;
     }
-    .carousel-inner {
+    .carousel {
         height: auto !important;
     }
-    .carousel-inner img {
+    .carousel img {
         height: auto !important;
     }
     .navbar-brand {
@@ -159,13 +162,47 @@ body {
     }
 }
 @media screen and (min-width: 800px){
-    .carousel-inner {
+    .carousel {
         height: 90vh !important;
     }
     #goToTop {
         display: none;
     }
     .carousel-caption {
+        /* margin: 25% auto; */
+        bottom: 30%;
+        border-radius: 20px;
+        background: rgba(0, 0, 0, 0.1);
+    }
+    .carousel-caption h3 {
+        font-size: 3rem !important;
+    }
+    .carousel-caption p {
+        font-size: 1.3rem !important;
+    }
+    /*.carousel {
+        height: 90vh !important;
+    }*/
+    .carousel img {
+        height: 100% !important;
+    }
+    .navbar-brand {
+        margin-right: 30px;
+    }
+    .navbar .active .nav-link{
+        font-weight: bold;
+        border-bottom: 3px solid #f8615a;
+    }
+}
+@media screen and (min-width: 1100px){
+    .carousel {
+        height: 90vh !important;
+    }
+    #goToTop {
+        display: none;
+    }
+    .carousel-caption {
+        /* margin: 25% auto; */
         bottom: 50%;
         border-radius: 20px;
         background: rgba(0, 0, 0, 0.1);
@@ -176,10 +213,10 @@ body {
     .carousel-caption p {
         font-size: 1.3rem !important;
     }
-    /*.carousel-inner {
+    /*.carousel {
         height: 90vh !important;
     }*/
-    .carousel-inner img {
+    .carousel img {
         height: 100% !important;
     }
     .navbar-brand {
