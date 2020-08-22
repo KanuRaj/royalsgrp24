@@ -144,9 +144,9 @@ body {
     .carousel-caption p {
         font-size: 1.3rem !important;
     }
-    /*.carousel-inner {
-        height: 90vh !important;
-    }*/
+    .carousel-inner {
+        height: auto !important;
+    }
     .carousel-inner img {
         height: auto !important;
     }
