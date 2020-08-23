@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
 }
 html {
     scroll-behavior: smooth;
@@ -83,6 +85,7 @@ body {
     bottom: 40px;
     z-index: 5;
     outline: none;
+    display: none;
     transition-duration: .5s;
 }
 
@@ -90,8 +93,9 @@ body {
     font-size: 1.8rem;
 }
 .navbar-brand:hover {
-    color:#00c851 !important;
+    color:#ff331f !important;
 }
+
 
 
 
