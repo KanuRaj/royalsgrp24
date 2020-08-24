@@ -175,7 +175,7 @@ body {
     animation-delay: 500ms;
 }
 .carousel-caption {
-    width: 80%;
+    width: 60%;
     top: 50%;
     left: 50%;
     bottom: initial;
@@ -198,9 +198,44 @@ body {
 .top-deals hr {
     background: #ffa41b;
 }
-
-
 /* .............. */
+
+
+
+/* Call To Action */
+
+.cto-content h2 {
+    color: #ffffff;
+}
+/* Call To Action end */
+
+
+
+/* Why US? */
+
+
+
+
+/* Why US? end */
+
+
+/* NewsLetter */
+
+.newsletter .card {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+.newsletter .nl-header span,.nl-header i {
+    font-size: 2rem;
+}
+.newsletter .nl-form p {
+    font-size: 1rem;
+}
+
+
+/* NewsLetter end */
+
+
 
 
 
@@ -235,6 +270,14 @@ body {
     .navbar-brand{
         width: 60%;
     }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 1.6rem;
+    }
+    .cto-content h2 {
+        font-size: 1.7rem;
+    }
+
+    
 }
 
 
@@ -251,6 +294,9 @@ body {
     }
     .carousel-caption p {
         font-size: 1.2rem !important;
+    }
+    .carousel-caption {
+        width: 65%;
     }
     .carousel-item {
         height: auto !important;
@@ -270,6 +316,12 @@ body {
     .top-deals hr {
         width: 30% !important;
     }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 2.7rem;
+    }
+    .newsletter .nl-form p {
+        font-size: 1.25rem;
+    }
 }
 
 
@@ -283,6 +335,9 @@ body {
     .carousel-caption p {
         font-size: 1.3rem !important;
     }
+    .carousel-caption {
+        width: 80%;
+    }
     .carousel-item {
         height: 88vh !important;
     }
@@ -295,7 +350,12 @@ body {
     .top-deals hr {
         width:25% !important;
     }
-    
+    .why-us p {
+        font-size:1.5rem;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 1.8rem;
+    }
 }
 
 
@@ -356,5 +416,8 @@ body {
     }
     .top-deals h1 {
         font-size: 4.3rem;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 2.5rem;
     }
 }
