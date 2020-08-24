@@ -299,10 +299,10 @@ body {
         width: 65%;
     }
     .carousel-item {
-        height: auto !important;
+        height: initial !important;
     }
     .carousel img {
-        height: auto !important;
+        height: initial !important;
     }
     .navbar-brand {
         margin-right: 30px;
