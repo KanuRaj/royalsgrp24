@@ -225,10 +225,10 @@ body {
         background: rgba(0, 0, 0, 0.2);
     }
     .carousel-caption h3 {
-        font-size: 3rem !important;
+        font-size: 2rem !important;
     }
     .carousel-caption p {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
     }
     .carousel {
         height: auto !important;
@@ -249,6 +249,12 @@ body {
 
 /* Devices Bigger Than Tablets ( lg ) */
 @media screen and (min-width: 800px){
+    .carousel-caption h3 {
+        font-size: 3rem !important;
+    }
+    .carousel-caption p {
+        font-size: 1.3rem !important;
+    }
     .carousel {
         height: auto !important;
     }
