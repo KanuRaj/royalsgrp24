@@ -357,7 +357,12 @@ body {
         font-size: 1.8rem;
     }
 }
-
+/* for chrome desktop mode */
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
+    .carousel-item {
+        height: initial !important;
+    }
+}
 
 /* When navbar expands */
 @media screen and (min-width: 995px){
