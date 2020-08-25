@@ -114,10 +114,17 @@ body {
 .card-image {
     transition: 1.2s ease-in-out;
     transform: scale(1);
+<<<<<<< HEAD
 }
 .card-image:hover {
     transform: scale(1.1);
 }
+=======
+}
+.card-image:hover {
+    transform: scale(1.1);
+}
+>>>>>>> 924a818e53a7a4bcaede3bee22718516d2786dd8
 
 .card-text {
     font-size: 1.4rem !important;
@@ -294,10 +301,17 @@ body {
     }
     .carousel-caption p {
         font-size: 1.2rem !important;
+<<<<<<< HEAD
     }
     .carousel-caption {
         width: 65%;
     }
+=======
+    }
+    .carousel-caption {
+        width: 65%;
+    }
+>>>>>>> 924a818e53a7a4bcaede3bee22718516d2786dd8
     .carousel-item {
         height: initial !important;
     }
@@ -309,6 +323,7 @@ body {
     }
     .navbar .active .nav-link{
         font-weight: bold;
+<<<<<<< HEAD
     }
     .top-deals h1 {
         font-size: 3.3rem;
@@ -359,6 +374,123 @@ body {
 }
 /* for chrome desktop mode */
 @media only screen and (max-width: 1000px) and (min-width: 800px) {
+    .carousel-item {
+        height: initial !important;
+    }
+}
+
+/* When navbar expands */
+@media screen and (min-width: 995px){
+    .navbar .active .nav-link{
+        background: none !important;
+    }
+    .nav-link:hover {
+        opacity: 1;
+      }
+    .navbar .active .nav-link::before{
+        transition: 300ms;
+        height: 3px;
+        border-radius: 5px;
+        width: 80%;
+        content: "";
+        position: absolute;
+        background-color: #d1d646;
+    }
+    .nav-link::before {
+        transition: 300ms;
+        height: 3px;
+        border-radius: 5px;
+        content: "";
+        position: absolute;
+        background-color: #d1d646;
+    }
+      
+    .nav-link::before {
+        width: 0%;
+        bottom: 0px;
+    }
+      
+    .nav-link:hover::before {
+        width: 80%;
+    }
+    
+}
+
+/* Large Laptops ( XL )*/
+@media screen and (min-width: 1100px){
+    .carousel-item {
+        height: 88vh !important;
+    }
+    .carousel-caption {
+        width: 55%;
+    }
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+    .navbar .nav-link{
+        font-weight: bold;
+    }
+    .card-text {
+        font-size: 1.5rem !important;
+        font-weight: 500;
+    }
+    .top-deals h1 {
+        font-size: 4.3rem;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 2.5rem;
+=======
+>>>>>>> 924a818e53a7a4bcaede3bee22718516d2786dd8
+    }
+    .top-deals h1 {
+        font-size: 3.3rem;
+    }
+    .top-deals hr {
+        width: 30% !important;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 2.7rem;
+    }
+    .newsletter .nl-form p {
+        font-size: 1.25rem;
+    }
+}
+
+
+
+
+/* Devices Bigger Than Tablets ( lg ) */
+@media screen and (min-width: 800px){
+    .carousel-caption h3 {
+        font-size: 3rem !important;
+    }
+    .carousel-caption p {
+        font-size: 1.3rem !important;
+    }
+    .carousel-caption {
+        width: 80%;
+    }
+    .carousel-item {
+        height: 88vh !important;
+    }
+    #goToTop {
+        display: none;
+    }
+    .top-deals h1 {
+        font-size: 3.5rem;
+    }
+    .top-deals hr {
+        width:25% !important;
+    }
+    .why-us p {
+        font-size:1.5rem;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 1.8rem;
+    }
+}
+/* for chrome desktop mode */
+@media only screen and (max-width: 1000px) and (min-width: 900px) {
     .carousel-item {
         height: initial !important;
     }
