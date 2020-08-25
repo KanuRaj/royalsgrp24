@@ -13,467 +13,634 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand display-1 font-weight-bold w-sm-75 ml-2" href="#">Royals<span
-            class="text-success">Group24</span>
-    </a>
+<body>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ">
-            <li class="nav-item active">
-                <a class="nav-link px-md-4 rounded" href="#"><i class="fas fa-home pr-1 text-dark"></i>
-                    Home
-                    <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-md-3 rounded" href="#"><i class="fas fa-paper-plane pr-1 text-dark"></i>
-                    About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link px-md-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-tag pr-1 text-dark"></i> Products
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Lands</a>
-                    <a class="dropdown-item" href="#">Plots</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Bunglow</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link px-md-3 rounded" href="#"><i class="fas fa-envelope pr-1 text-dark"></i>
-                    Contact US</a>
-            </li>
-        </ul>
-        <form class="d-md-block d-lg-block d-xl-block d-none form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2 rounded" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-danger btn-sm my-2 my-sm-0" type="submit"><i
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand display-1 font-weight-bold w-sm-75 mr-xl-5 ml-xl-5 ml-2" href="index.html">Royals<span
+                class="text-success">Group24</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav px-3 pt-3 pt-md-0 px-md-0 mr-auto ml-xl-4 ml-0">
+                <li class="nav-item active">
+                    <a class="nav-link px-xl-3 rounded" href="#"><i class="fas fa-home pr-1 text-dark"></i>
+                        Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-xl-3 rounded" href="#"><i class="fas fa-paper-plane pr-1 text-dark"></i>
+                        About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link px-xl-3 rounded dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-tag pr-1 text-dark"></i> Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Lands</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Plots</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Bunglow</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-xl-3 rounded" href="#"><i class="fas fa-envelope pr-1 text-dark"></i>
+                        Contact US</a>
+                </li>
+            </ul>
+            <form class="d-md-none d-lg-block d-xl-block d-none form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2 rounded" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger btn-sm my-2 my-sm-0" type="submit"><i
+                        class="fas fa-search text-danger"></i></button>
+            </form>
+        </div>
+        <form class="d-lg-none form-inline my-2 my-lg-0 w-100 d-flex justify-content-center align-items-center col-12">
+            <input class="form-control mr-xs-2 mr-md-0 rounded-left w-100 col-10" type="search" placeholder="Search"
+                aria-label="Search">
+            <button class="btn-outline-danger btn-sm py-2 my-2 my-sm-0 col-2" type="submit"><i
                     class="fas fa-search text-danger"></i></button>
         </form>
+    </nav>
+
+
+    <!-- GO TO TOP -->
+    <button id="goToTop" class="rounded-circle py-2 px-3 d-lg-none bg-secondary text-white" type="button"><i
+            class="fas fa-chevron-up"></i></button>
+    <!-- END -->
+
+
+    <!-- PreLoader -->
+    <div id="preloader"></div>
+    <!-- End -->
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active justify-content-center align-items-center">
+                <img src="media/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <h3 class="w-100 font-weight-bold animated fadeInDownBig">Welcome To The Royals<span
+                                class="text-warning">Group24</span></h3>
+                        <hr class="animated fadeIn">
+                        <p class="animated fadeInLeft">We are lucknow's well known Real Estate Company</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="media/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <h3 class="w-100 font-weight-bold animated fadeInDownBig">Do you want Plot In Lucknow?</h3>
+                        <hr class="animated fadeIn">
+                        <p class="animated fadeInLeft">We are here to help you in lucknow, Let us handle</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="media/img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <div class="carousel-caption-inner">
+                        <h3 class="w-100 font-weight-bold animated fadeInDownBig">Plots, Bunglows & Houses</h3>
+                        <hr class="animated fadeIn">
+                        <p class="animated fadeInLeft">Get your own plots at best rates.! Contact now and get best
+                            Prices
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <form
-        class="d-md-none d-xl-none form-inline my-2 my-lg-0 w-100 d-flex justify-content-center align-items-center col-12">
-        <input class="form-control mr-sm-2 rounded-left w-100 col-10" type="search" placeholder="Search"
-            aria-label="Search">
-        <button class="btn-outline-danger btn-sm py-2 px-3 my-2 my-sm-0 col-2" type="submit"><i
-                class="fas fa-search text-danger"></i></button>
-    </form>
-</nav>
-
-
-<!-- GO TO TOP -->
-<button id="goToTop" class="rounded-circle py-2 px-3" type="button"><i class="fas fa-chevron-up"></i></button>
 
 
 
 
 
 
+    <!-- TOP DEALS -->
 
 
-<!-- carousel -->
-<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner h-75">
-        <div class="carousel-item active">
-            <img src="https://source.unsplash.com/1600x900/?real%20estate,home" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Welcome To The RoyalsGroup24</h1>
-                <p>We are lucknow's well known Real Estate Company</p>
+    <div class="top-deals-container">
+        <div class="top-deals card-text px-lg-5 px-4 w-100 mt-5 mb-md-5 mb-3">
+            <h1 class="display-4 font-weight-bolder animated fadeInLeftBig">TOP DEALS IN LUCKNOW</h1>
+            <hr class="py-1 rounded w-50 animated fadeInRight">
+        </div>
+
+        <!-- Cards -->
+        <div class="container-fluid">
+            <div class="row px-3">
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Sultanpur Road</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 1800 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i
+                                                class="text-primary mx-2 fas fa-map-marked-alt"></i>Sultanpur
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹14.38
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img2.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Utterdhauna</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 500 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>2BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i
+                                                class="text-primary mx-2 fas fa-map-marked-alt"></i>Utterdhauna
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹10.50
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img8.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Hardpi Road</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 2700 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Hardpi
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹94.80
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img3.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Gomti Nagar</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 600 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>4BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Gomti
+                                            Nagar
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹15.50
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img8.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Sultanpur Road</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 1800 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i
+                                                class="text-primary mx-2 fas fa-map-marked-alt"></i>Sultanpur
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹14.38
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img9.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Utterdhauna</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 500 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>2BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i
+                                                class="text-primary mx-2 fas fa-map-marked-alt"></i>Utterdhauna
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹10.50
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img4.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Hardpi Road</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 2700 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Hardpi
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹94.80
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-2 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card my-4 animated fadeInUp w-100">
+                        <div class="card-image">
+                            <img src="media/img12.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body pt-0">
+                            <h6 class="card-title">
+                                </h5>
+                                <p class="card-text">Residential Land/Plot In Gomti Nagar</p>
+                                <div class="row card-features no-gutters justify-content-between">
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 600 sq.ft.
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>4BHK</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Gomti
+                                            Nagar
+                                        </p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹15.50
+                                            Lakhs
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btn-group shadow w-100" role="group" aria-label="Basic example"
+                                    style="border-radius: 15px;">
+                                    <a href="#"
+                                        class="btn btn-danger shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">Call
+                                        <i class="fas fa-phone ml-2"></i></a>
+                                    <a href="#"
+                                        class="btn btn-secondary shadow-none font-weight-bold w-100 my-0 mx-0 px-4 px-md-5">View
+                                        <i class="fas fa-eye ml-2"></i></a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x900/?real%20estate,home" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="https://source.unsplash.com/1600x900/?real%20estate,home" class="d-block w-100" alt="...">
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div> -->
 
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner h-100">
-        <div class="carousel-item active">
-            <img src="media/img1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-                <h3 class="w-100 font-weight-bold animated fadeInDownBig">Welcome To The Royals<span
-                        class="text-warning">Group24</span></h3>
-                <hr class="animated fadeIn">
-                <p class="animated fadeInLeft">We are lucknow's well known Real Estate Company</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="media/img2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-                <h3 class="w-100 font-weight-bold animated fadeInDownBig">Do you want Plot In Lucknow?</h3>
-                <hr class="animated fadeIn">
-                <p class="animated fadeInLeft">We are here to help you in lucknow, Let us handle</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="media/img3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption">
-                <h3 class="w-100 font-weight-bold animated fadeInDownBig">Plots, Bunglows & Houses Are Available </h3>
-                <hr class="animated fadeIn">
-                <p class="animated fadeInLeft">Get your own plots at best rates.! Contact now and get best Prices</p>
+    <!-- TOP DEALS End -->
+
+
+    <!-- CALL TO ACTION -->
+
+
+
+    <div class="call-to-action px-2">
+        <div class="card purple-gradient py-4 cto-content animated fadeIn">
+            <div class="row no-gutters">
+                <div class="d-flex justify-content-center align-items-center col-12 col-md-4 col-lg-3">
+                    <img src="media/discount-icon.png" alt="Discount-icon">
+                </div>
+                <div
+                    class="cto-heading card-text px-4 text-center py-2 col-12 col-md-8 col-lg-9 d-flex flex-column justify-content-center align-items-center">
+                    <h2 class="h1 font-weight-bolder mb-4">Special Offers Are Ending In 7 Days, Hurry Up..!!</h2>
+                    <button class="btn btn-lg btn-danger d-lg-none w-100 mx-auto font-weight-bolder my-2">Call Now <i
+                            class="fas fa-phone-square ml-1"></i></button>
+                    <button class="btn btn-lg btn-default d-lg-none w-100 mx-auto font-weight-bolder my-2">Message Us <i
+                            class="fas fa-envelope mr-1"></i></button>
+                    <button class="d-none d-lg-block btn btn-danger btn-lg w-50 mx-auto font-weight-bolder">Contact
+                        Us <i class="fas fa-phone-square ml-1"></i></button>
+                </div>
             </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<!-- Cards -->
-<div class="container-fluid mt-md-2">
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img4.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Sultanpur Road</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 1800 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Sultanpur
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹14.38 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img2.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Utterdhauna</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 500 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>2BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Utterdhauna
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹10.50 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img5.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Hardpi Road</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 2700 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Hardpi
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹94.80 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img13.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Gomti Nagar</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 600 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>4BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Gomti Nagar
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹15.50 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img8.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Sultanpur Road</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 1800 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Sultanpur
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹14.38 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img9.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Utterdhauna</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 500 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>2BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Utterdhauna
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹10.50 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img10.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Hardpi Road</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 2700 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>3BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Hardpi
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹94.80 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3">
-            <div class="card mx-2 my-4 animated fadeIn" style="width:100%">
-                <div class="card-image">
-                    <img src="media/img12.jpg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">
-                        </h5>
-                        <p class="card-text">Residential Land/Plot In Gomti Nagar</p>
-                        <div class="row no-gutters justify-content-between">
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-chart-area"></i> 600 sq.ft.</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-bed"></i>4BHK</p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-map-marked-alt"></i>Gomti Nagar
-                                </p>
-                            </div>
-                            <div class="col-6">
-                                <p class="w-100"><i class="text-primary mx-2 fas fa-money-bill-wave"></i>₹15.50 Lakhs
-                                </p>
-                            </div>
-                        </div>
-                        <a href="#" class="btn btn-danger font-weight-bold w-100">Click to view <i
-                                class="fas fa-eye ml-2"></i></a>
-                </div>
-            </div>
-        </div>
 
+
+    <!-- CALL TO ACTION end -->
+
+
+
+    <!-- Why to choose us ? -->
+
+    <div class="px-2 why-us">
+        <div class="my-4 mb-5 card pb-5">
+            <div class="top-deals px-lg-5 px-4 w-100 mt-5 mb-md-5 mb-3">
+                <h1 class="display-4 font-weight-bolder animated fadeInLeftBig">Why To Choose RoyalsField Megacity?</h1>
+                <hr class="py-1 rounded w-50 animated fadeInRight">
+            </div>
+
+            <div class="px-4 px-lg-5">
+                <p class="h5 animated fadeInUp" style="text-indent: 15%;word-break: keep-all; text-align: justify;">
+                    <span class="font-weight-bolder text-danger h1">We</span> Have Experience Of Over 5 Years In This
+                    Industry and we
+                    are
+                    growing rapidly i our field. RoyalsField Megacity has an excellent reputation in the market and in
+                    the
+                    communities we serve. We are active, involved and connected. We operate in Medina County, Cuyahoga
+                    and
+                    Summit
+                    counties. Our team lives in the communities we serve, giving us an additional motivation in making
+                    transactions
+                    happen. Our team members’ involvement with numerous organizations and local government helps us
+                    generate
+                    more
+                    leads, price more accurately, negotiate with greater leverage, and simply put, gives our clients an
+                    advantage.
+                </p>
+            </div>
+        </div>
     </div>
-</div>
 
 
 
 
+    <!-- Why to choose us Enddd -->
 
-<!-- FOOTER -->
 
-<!-- Footer -->
-<footer class="page-footer font-small cyan darken-3">
 
-    <!-- Footer Elements -->
-    <div class="container">
 
-        <!-- Grid row-->
-        <div class="row">
+    <!-- Subscribe To Our Newsletter -->
+    <div class="newsletter">
+        <div class="card-text aqua-gradient text-white px-3 py-4 w-100">
+            <div class="row no-gutters">
 
-            <!-- Grid column -->
-            <div class="col-md-12 py-3">
-                <div class="mb-5 flex-center">
-
-                    <!-- Facebook -->
-                    <a class="fb-ic mx-3">
-                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!-- Twitter -->
-                    <a class="tw-ic mx-3">
-                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!-- Google +-->
-                    <a class="gplus-ic mx-3">
-                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Linkedin -->
-                    <a class="li-ic mx-3">
-                        <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Instagram-->
-                    <a class="ins-ic mx-3">
-                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                    </a>
-                    <!--Pinterest-->
-                    <a class="pin-ic mx-3">
-                        <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
-                    </a>
+                <div class="nl-header d-flex justify-content-around align-items-center mb-4 col-12 col-lg-5">
+                    <i class="fas fa-envelope-open-text rounded-circle mx-lg-5 mx-3 p-3 p-md-4"
+                        style="border: 5px dashed #e557b6;"></i>
+                    <span class="font-weight-bolder">Subscribe To Our Newsletter</span>
+                </div>
+                <div class="nl-form col-12 col-lg-7">
+                    <p class="font-weight-bold text-center h5">Get Latest Updates Of All Offers, Discounts & Many More..
+                    </p>
+                    <div class="d-flex justify-content-around align-items-center px-lg-5 my-3 col-12">
+                        <input class="col-9 col-lg-10 rounded-pill form-control py-4 px-4 font-weight-bold shadow"
+                            type="email" name="" id="" placeholder="Enter Your Email...">
+                        <button class="col-3 col-lg-2 w-100 btn px-2 peach-gradient rounded-pill font-weight-bold"
+                            type="submit"><i class="fa fa-paper-plane fa-lg"></i></button>
+                    </div>
                 </div>
             </div>
-            <!-- Grid column -->
+        </div>
+    </div>
+    <!-- Subscribe To Our Newsletter Endd -->
+
+
+    <!-- FOOTER -->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12 py-3">
+                    <div class="mb-5 flex-center">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic mx-md-3">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic mx-md-3">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic mx-md-3">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic mx-md-3">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic mx-md-3">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic mx-md-3">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
 
         </div>
-        <!-- Grid row-->
+        <!-- Footer Elements -->
 
-    </div>
-    <!-- Footer Elements -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> RoyalsGroup24.com</a>
+        </div>
+        <!-- Copyright -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://mdbootstrap.com/"> RoyalsGroup24.com</a>
-    </div>
-    <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
-</footer>
-<!-- Footer -->
-
-<!-- END FOOTER -->
+    <!-- END FOOTER -->
 
 
 
 
 
-<script src="src/js/jquery.min.js"></script>
-<script src="src/js/bootstrap.min.js"></script>
-<script src="src/js/mdb.min.js"></script>
-<script src="src/js/script.js"></script>
-
-<body>
+    <script src="src/js/jquery.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
+    <script src="src/js/mdb.min.js"></script>
+    <script src="src/js/script.js"></script>
 
 </body>
 
