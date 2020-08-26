@@ -408,7 +408,7 @@ html {
         transition: 300ms;
         height: 3px;
         border-radius: 5px;
-        width: 80%;
+        transform: scaleX(1);
         content: "";
         position: absolute;
         background-color: #d1d646;
@@ -416,6 +416,9 @@ html {
     .nav-link::before {
         transition: 300ms;
         height: 3px;
+        width: 80%;
+        transform: scaleX(0);
+        transform-origin: bottom left;
         border-radius: 5px;
         content: "";
         position: absolute;
@@ -423,12 +426,12 @@ html {
     }
       
     .nav-link::before {
-        width: 0%;
         bottom: 0px;
     }
       
     .nav-link:hover::before {
-        width: 80%;
+        transform: scaleX(1);
+        transform-origin: bottom right;
     }
     
 }
