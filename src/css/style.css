@@ -9,9 +9,6 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-}
-
 .no-padding {
     padding: 0 !important;
 }
@@ -187,9 +184,7 @@ body {
 
 
 /* Top deals */
-.top-deals {
 
-}
 .top-deals h1 {
     font-size: 3rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
@@ -211,12 +206,30 @@ body {
 
 
 
-/* Why US? */
+/* About US? */
+
+.about-us .details p {
+    text-indent: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    word-break: keep-all;
+    text-align: justify;
+    font-weight: 500 !important;
+    font-size: 3vh;
+}
+.about-us .heading h1 {
+    font-size: 2rem;
+}
+.about-us .team p {
+    text-indent: 15%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    word-break: keep-all;
+    text-align: justify;
+    font-weight: 500 !important;
+    font-size: 3vh;
+}
 
 
-
-
-/* Why US? end */
+/* About US? end */
 
 
 /* NewsLetter */
@@ -276,7 +289,9 @@ body {
     .cto-content h2 {
         font-size: 1.7rem;
     }
-
+    .about-us .team p {
+        font-size: 2.5vh;
+    }
     
 }
 
@@ -322,6 +337,8 @@ body {
     .newsletter .nl-form p {
         font-size: 1.25rem;
     }
+        
+
 }
 
 
@@ -355,6 +372,15 @@ body {
     }
     .newsletter .nl-header span,.nl-header i {
         font-size: 1.8rem;
+    }
+    .about-us .team p {
+        font-size: 3.5vh;
+    }
+    .about-us .details p {
+        font-size: 3.5vh;
+    }
+    .about-us .heading h1 {
+        font-size: 2.5rem;
     }
 }
 /* for chrome desktop mode */
