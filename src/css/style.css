@@ -388,6 +388,12 @@ html {
     .carousel-item {
         height: initial !important;
     }
+    .about-us .team p {
+        font-size: 28.105px;
+    }
+    .about-us .details p {
+        font-size: 28.105px;
+    }
 }
 
 /* When navbar expands */
