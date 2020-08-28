@@ -253,6 +253,53 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+/* SEARCH */
+
+
+.search .sr-card{
+    transition-duration: 0.2s;
+    border-radius: 12px !important;
+}
+.search .sr-card span{
+    font-size:0.8rem;
+}
+
+.search .sr-card h2{
+    font-size:3.5vh;
+}
+.search .sr-card .tags{
+    font-size:12px;
+}
+.search .sr-card .shortdesc{
+    font-size:15px;
+}
+
+
+/* SEARCH */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ................. */
 /* KeyFrames */
 @keyframes goWide{
