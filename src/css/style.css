@@ -323,24 +323,6 @@ html {
 
 
 /* Media Queries */
-@media only screen and (max-width:320px){
-    .search .sr-card h2{
-        font-size:0.8rem;
-    }
-    .search .sr-card span{
-        font-size:0.5rem;
-    }
-    .search .sr-card .tags div{
-        margin: 1px !important;
-    }
-    .search .sr-card .tags{
-        font-size:10px;
-        padding: auto 0 !important;
-    }
-    .search .sr-card .shortdesc{
-        font-size:10px;
-    }
-}
 @media only screen and (max-width:400px){
     .top-deals h1 {    
         font-size: 2.5rem;
@@ -357,7 +339,22 @@ html {
     .about-us .team p {
         font-size: 2.5vh;
     }
-    
+    .search .sr-card h2{
+        font-size:01rem;
+    }
+    .search .sr-card span{
+        font-size:0.6rem;
+    }
+    .search .sr-card .tags div{
+        margin: 1px !important;
+    }
+    .search .sr-card .tags{
+        font-size:10px;
+        padding: auto 0 !important;
+    }
+    .search .sr-card .shortdesc{
+        font-size:12px;
+    }
     
 }
 
