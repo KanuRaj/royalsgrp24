@@ -340,7 +340,8 @@ html {
         font-size: 2.5vh;
     }
     .search .sr-card h2{
-        font-size:01rem;
+        font-size:1rem;
+        margin-bottom: 0 !important;
     }
     .search .sr-card span{
         font-size:0.6rem;
