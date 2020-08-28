@@ -297,6 +297,9 @@ html {
 .search .sr-card {
     border-radius: 0 !important;
 }
+.search .sr-card img {
+    border-radius: 4px !important;
+}
 
 
 
@@ -485,6 +488,9 @@ html {
     }
     .search .sr-card {
         border-radius: 15px !important;
+    }
+    .search .sr-card img {
+        border-radius: 0px !important;
     }
     .search .sr-card span{
         font-size:0.7rem;
