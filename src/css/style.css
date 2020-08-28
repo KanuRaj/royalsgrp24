@@ -281,6 +281,17 @@ html {
 .search .sr-card .shortdesc{
     font-size:15px;
 }
+.search-options button {
+    font-weight: bolder;
+    border-radius: 8px;
+}
+.search-options .filter {
+    border: 3px solid #d6282886;
+}
+.search-options .sort {
+    border: 3px solid #4f478986;
+}
+
 
 
 /* SEARCH */
@@ -355,6 +366,9 @@ html {
     }
     .search .sr-card .shortdesc{
         font-size:12px;
+    }
+    .search-options .sort{
+        width: auto !important;
     }
     
 }
