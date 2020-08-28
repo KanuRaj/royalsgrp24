@@ -325,7 +325,7 @@ html {
     border-top-left-radius: 50px 40px !important;
 }
 .product .product-details {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
 }
 .product .addToFav {
     min-width: 50px;
