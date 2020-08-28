@@ -308,6 +308,41 @@ html {
 
 
 
+/* Product */
+
+.product * {
+    font-family: 'Hind Madurai', sans-serif;
+    border: none;
+}
+.product i {
+    font-family: "Font Awesome 5 Free","Font Awesome 5 Brands" !important;
+}
+.product-img {
+    max-height: initial;
+}
+.product .product-details .basic-info {
+    border-top-right-radius:50px 40px !important;
+    border-top-left-radius: 50px 40px !important;
+}
+.product .product-details {
+    transform: translateY(-40px);
+}
+.product .addToFav {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    top: 30px;
+    right: 30px;
+    border: none;
+    outline: none;
+}
+
+
+/* Product */
+
+
+
 
 
 
@@ -504,6 +539,7 @@ html {
     .search .sr-card .shortdesc{
         font-size:14px;
     }
+    
 }
 /* for chrome desktop mode */
 @media only screen and (max-width: 1000px) and (min-width: 900px) {
@@ -569,6 +605,24 @@ html {
     }
     .search .sr-card .shortdesc{
         font-size:16px;
+    }
+    .product-img {
+        min-height: 90vh;
+    }
+    .product .product-details {
+        overflow-x: auto;
+        transform: translateY(0px);
+    }
+    .product .basic-info{
+        border-radius:  0 !important;
+    }
+    .product .addToFav{
+        top:50px;
+        right:50px;
+    }
+    .product .product-details .basic-info {
+        border-top-right-radius:initial !important;
+        border-top-left-radius: initial !important;
     }
     
 }
