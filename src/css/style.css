@@ -273,7 +273,10 @@ html {
 }
 
 .search .sr-card h2{
-    font-size:3.2vh;
+    font-size:20px;
+}
+.search-header {
+    border-top: 5px solid #59706880;
 }
 .search .sr-card .tags{
     font-size:15px;
@@ -290,6 +293,9 @@ html {
 }
 .search-options .sort {
     border: 3px solid #4f478986;
+}
+.search .sr-card {
+    border-radius: 0 !important;
 }
 
 
@@ -339,6 +345,7 @@ html {
         font-size: 2.5rem;
     }
     .navbar-brand{
+        font-size: 1.5rem;
         width: 60%;
     }
     .newsletter .nl-header span,.nl-header i {
@@ -354,6 +361,7 @@ html {
         font-size:1rem;
         margin-bottom: 0 !important;
     }
+    
     .search .sr-card span{
         font-size:0.6rem;
     }
@@ -415,19 +423,22 @@ html {
     .newsletter .nl-form p {
         font-size: 1.25rem;
     }
-    
-.search .sr-card span{
-    font-size:1rem;
-}
-.search .sr-card h2{
-    font-size:4.2vh;
-}
-.search .sr-card .tags{
-    font-size:16px;
-}
-.search .sr-card .shortdesc{
-    font-size:18px;
-}
+    .search .sr-card span{
+        font-size:1rem;
+    }
+
+    .search-header {
+        border-top: none;
+    }
+    .search .sr-card h2{
+        font-size:1.5rem;
+    }
+    .search .sr-card .tags{
+        font-size:16px;
+    }
+    .search .sr-card .shortdesc{
+        font-size:17px;
+    }
 
 }
 
@@ -435,7 +446,7 @@ html {
 
 
 /* Devices Bigger Than Tablets ( lg ) */
-@media screen and (min-width: 800px){
+@media screen and (min-width: 750px){
     .carousel-caption h3 {
         font-size: 3rem !important;
     }
@@ -472,6 +483,9 @@ html {
     .about-us .heading h1 {
         font-size: 2.5rem;
     }
+    .search .sr-card {
+        border-radius: 15px !important;
+    }
     .search .sr-card span{
         font-size:0.7rem;
     }
@@ -497,7 +511,7 @@ html {
         font-size: 28.105px;
     }
     .search .sr-card h2{
-        font-size:25px;
+        font-size:1.2rem;
     }
 }
 
@@ -542,7 +556,7 @@ html {
         font-size:0.8rem;
     }
     .search .sr-card h2{
-        font-size:1.5rem;
+        font-size:1.3rem;
     }
     .search .sr-card .tags{
         font-size:14px;
@@ -578,7 +592,7 @@ html {
         font-size: 2.5rem;
     }
     .search .sr-card h2{
-        font-size:3.2vh;
+        font-size:1.3rem;
     }
     .search .sr-card .tags{
         font-size:15px;
