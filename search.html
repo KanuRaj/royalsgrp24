@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoyalsGroup24 - About Us</title>
+    <title>RoyalsGroup24 - Search</title>
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i'
@@ -83,11 +83,68 @@
     <!-- Search Results -->
 
     <section>
-        <div class="search-header text-center py-3 bg-danger">
-            <span class="font-weight-bold text-white">Showing results for : <i>Gomti Nagar</i></span>
+        <div class="search-header text-center py-3 bg-danger font-weight-bold">
+            <button class="btn btn-secondary rounded-pill my-0" data-toggle="modal"
+                data-target="#basicExampleModal">Filters <i class="fa fa-magic"></i></button>
+            <span class="text-white">Showing results for : <i>Gomti Nagar</i></span>
         </div>
+
+
+        <!-- Filter Modal -->
+        <!-- Modal -->
+        <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-weight-bold" id="exampleModalLabel">Filters</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form class="font-weight-bold">
+                        <div class="modal-body px-4">
+                            <label for="min-price">Select Range</label>
+                            <select class="form-control custom-select mb-3">
+                                <option value="" disabled selected>All</option>
+                                <option value="1">Under ₹10 Lacs</option>
+                                <option value="2">₹10 - 15 Lacs</option>
+                                <option value="3">₹15 - 20 Lacs</option>
+                                <option value="3">More than ₹20 Lacs</option>
+                            </select>
+                            <label for="min-price">Select Property Type</label>
+                            <select class="form-control custom-select mb-3">
+                                <option value="" disabled selected>All</option>
+                                <option value="1">Land / Plot</option>
+                                <option value="2">House/Villa</option>
+                                <option value="3">Flats</option>
+                                <option value="3">Apartment</option>
+                            </select>
+                            <label for="min-price">Select Area Size</label>
+                            <select class="form-control custom-select mb-3">
+                                <option value="" disabled selected>All</option>
+                                <option value="1">Under 500 sq.ft</option>
+                                <option value="2">500 - 1000 sq.ft</option>
+                                <option value="3">1000 - 1500 sq.ft</option>
+                                <option value="3">More than 1500 sq.ft</option>
+                            </select>
+                            <label for="min-price">Enter Location</label>
+                            <input type="text" class="form-control" name="" id="" placeholder="Enter Location">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger rounded-pill"
+                                data-dismiss="modal">Close</button>
+                            <a href="search.html"><button type="button" class="btn btn-primary rounded-pill">Apply
+                                    Filters</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Filter Modal -->
+
         <div class="container-fluid search py-4 bg-light">
-            <div class="row px-2 justify-content-around">
+            <div class="row px-lg-2 justify-content-around">
                 <div class="col-12 col-md-6 mb-3 row">
                     <div class="sr-card py-md-4 py-3 px-0 bg-white rounded-lg col-12 row mx-0 align-items-center">
                         <div class="col-5 no-padding">
@@ -105,16 +162,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -125,21 +182,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -161,16 +210,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -181,21 +230,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -217,16 +258,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -237,21 +278,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -273,16 +306,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -293,21 +326,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -329,16 +354,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -349,21 +374,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -385,16 +402,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -405,21 +422,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -441,16 +450,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -461,21 +470,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -497,16 +498,16 @@
                             <span class="mx-md-2 mx-1">|</span>
                             <span class="font-weight-bold dark-grey-text">
                                 1500 sq.ft</span>
-                            <div class="tags d-flex justify-content-start">
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">Near
+                            <div class="tags d-flex flex-wrap justify-content-start">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">Near
                                     College
                                 </div>
-                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none mx-1">
+                                <div class="badge badge badge-light font-weight-lighter py-1 px-2 shadow-none m-1">
                                     Ready To
                                     Move
                                 </div>
                             </div>
-                            <div class="shortdesc d-none d-lg-block">
+                            <div class="shortdesc d-none d-xl-block">
                                 <p class="text-justify">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
@@ -517,21 +518,13 @@
                         </div>
                         <div class="col-12 mt-1 dark-grey-text">
                             <div class="divider w-100"></div>
-                            <div class="shortdesc  d-lg-none">
+                            <div class="shortdesc d-xl-none">
                                 <p class="text-justify mb-0">
                                     It is a new launch project. The project is spread over a total area of 3.24 acres of
                                     land...
                                     <a href="#">read more</a>
                                 </p>
                                 <p class="text-default my-0">Posted On 29 Jan 2020</p>
-                            </div>
-                            <div class="btn-group d-none w-75 rounded-pill" role="group" aria-label="Basic example">
-                                <a href="#"
-                                    class="btn btn-danger btn-sm shadow-none rounded-left font-weight-bold w-100 m-0">Call
-                                    <i class="fas fa-phone ml-2"></i></a>
-                                <a href="#"
-                                    class="btn btn-secondary btn-sm shadow-none rounded-right font-weight-bold w-100 m-0">View
-                                    <i class="fas fa-eye ml-2"></i></a>
                             </div>
                         </div>
                     </div>
