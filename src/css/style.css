@@ -323,22 +323,7 @@ html {
 
 
 /* Media Queries */
-@media only screen and (max-width:400px){
-    .top-deals h1 {    
-        font-size: 2.5rem;
-    }
-    .navbar-brand{
-        width: 60%;
-    }
-    .newsletter .nl-header span,.nl-header i {
-        font-size: 1.6rem;
-    }
-    .cto-content h2 {
-        font-size: 1.7rem;
-    }
-    .about-us .team p {
-        font-size: 2.5vh;
-    }
+@media only screen and (max-width:320px){
     .search .sr-card h2{
         font-size:0.8rem;
     }
@@ -355,6 +340,24 @@ html {
     .search .sr-card .shortdesc{
         font-size:10px;
     }
+}
+@media only screen and (max-width:400px){
+    .top-deals h1 {    
+        font-size: 2.5rem;
+    }
+    .navbar-brand{
+        width: 60%;
+    }
+    .newsletter .nl-header span,.nl-header i {
+        font-size: 1.6rem;
+    }
+    .cto-content h2 {
+        font-size: 1.7rem;
+    }
+    .about-us .team p {
+        font-size: 2.5vh;
+    }
+    
     
 }
 
