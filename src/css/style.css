@@ -124,7 +124,7 @@ html {
 /* Carousel CSS */
 
 .carousel-item {
-    height:40vh !important;
+    height:250px !important;
     max-height:auto !important;
 }
 
@@ -132,7 +132,7 @@ html {
     filter: grayscale(50%);
     filter: brightness(50%);
     width:100%;
-    height:40vh;
+    height:250px;
 }
 .carousel-caption hr {
     padding: 2px;
@@ -365,7 +365,7 @@ html {
         font-size: 2.5rem;
     }
     .navbar-brand{
-        font-size: 1.5rem;
+        font-size: 1.65rem;
         width: 60%;
     }
     .newsletter .nl-header span,.nl-header i {
