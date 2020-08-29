@@ -41,7 +41,7 @@
 
 .media {
     width: fit-content;
-    max-width: 60% !important;
+    max-width: 80% !important;
 }
 
 .media .media-body div {
@@ -85,14 +85,14 @@ input::placeholder {
 }
 
 .chatbotBtn {
-    min-width: 50px;
+    min-width: 60px;
     font-size: 20px;
-    min-height: 50px;
+    min-height: 60px;
     outline: none !important;
     border: none;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 40px;
+    right: 40px;
 }
 
 
@@ -153,7 +153,9 @@ div#wave .dot:nth-child(3) {
         left: 30% !important;
         top: 3%;
     }
-
+    .media {
+        max-width: 60% !important;
+    }
     .modal-body {
         min-height: 80vh;
         max-height: 80vh !important;
