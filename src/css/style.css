@@ -325,7 +325,7 @@ html {
     border-top-left-radius: 50px 40px !important;
 }
 .product .product-details {
-    transform: translateY(-30px);
+    transform: translateY(-40px);
 }
 .product .addToFav {
     min-width: 50px;
@@ -337,7 +337,12 @@ html {
     border: none;
     outline: none;
 }
-
+.divide-line {
+    height:0;
+    margin:.5rem 0;
+    overflow:hidden;
+    border-top:1px solid #e9ecef
+}
 
 /* Product */
 
