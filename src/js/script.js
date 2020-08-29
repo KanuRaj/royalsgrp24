@@ -63,3 +63,10 @@ $(document).on("click", ".addToFav", function (e) {
     // $(this).children('i').removeClass("far");
     $(this).children('i').toggleClass("fas");
 });
+
+$(".chatbotBtn").on("click", () => {
+    $('body').toggleClass('overflow-hidden')
+})
+$("#closeChatbot").on("click", () => {
+    $('body').toggleClass('overflow-hidden')
+})
