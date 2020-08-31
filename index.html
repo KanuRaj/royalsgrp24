@@ -700,7 +700,7 @@
 
 
 
-    <!-- Chat Bot -->
+      <!-- Chat Bot -->
     <div class="container-fluid m-0 no-padding chatbot">
         <button id="modalActivate" type="button" class="chatbotBtn rounded-circle btn-danger" data-toggle="modal"
             data-target="#exampleModalPreview">
@@ -725,58 +725,8 @@
                             <h5 class="h5-responsive text-white font-weight-bold w-75 pl-3 pt-2">Kallu Bhaiya</h5>
                         </div>
                         <div class="px-lg-4 px-2 py-5 chat-box bg-white overflow-auto">
-                            <!-- Bot Message-->
-                            <div class="w-100">
-                                <div class="media bot-msg mb-3"><img
-                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
-                                        alt="user" width="50" class="rounded-circle">
-                                    <div class="media-body ml-3">
-                                        <div class="bg-primary text-white shadow-sm rounded py-2 px-3 mb-2">
-                                            <p class="text-small mb-0">Hii Friend</p>
-                                        </div>
-                                        <div class="bg-primary text-white shadow-sm rounded py-2 px-3 mb-2">
-                                            <p class="text-small mb-0">I'm Kallu Bhaiya</p>
-                                        </div>
-                                        <div class="bg-primary text-white shadow-sm rounded py-2 px-3 mb-2">
-                                            <p class="text-small mb-0">from RoyalsGroup24.
-                                                Chalo thodi Baat Krte Hai</p>
-                                        </div>
-                                        <div class="bg-primary text-white shadow-sm rounded py-2 px-3 mb-2">
-                                            <p class="text-small mb-0">What's You Name?</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- User Message-->
-                            <div class="w-100">
-                                <div class="media user-msg ml-auto mb-3">
-                                    <div class="media-body">
-                                        <div class="bg-primary rounded py-2 px-3 shadow-sm mb-2">
-                                            <p class="text-small mb-0 text-white">
-                                                My name is Suresh Verma
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Bot Message-->
-                            <div class="w-100">
-                                <div class="media mb-3"><img
-                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
-                                        alt="user" width="50" class="rounded-circle">
-                                    <div class="media-body ml-3">
-                                        <div class="bg-primary text-white shadow-sm rounded py-2 px-3 mb-2">
-                                            <div id="wave">
-                                                <span class="dot"></span>
-                                                <span class="dot"></span>
-                                                <span class="dot"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                            
+                            {{-- CHAT bOX --}}
 
                         </div>
                     </div>
@@ -784,11 +734,11 @@
                         <!-- Typing area -->
                         <div class="set-bottom px-2 py-2 bg-secondary">
                             <div class="input-group">
-                                <input type="text" class="form-control shadow-none rounded-pill"
+                                <input type="text" class="form-control shadow-none rounded-pill" id="userMessage"
                                     placeholder="Type your message">
                                 <div class="input-group-append">
-                                    <span class="input-group-text bg-success rounded-circle mx-1 border-0 text-white"><i
-                                            class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                                    <button class="input-group-text bg-success rounded-circle mx-1 border-0 text-white" id="sendMsgBtn" style="outline: none !important;"><i
+                                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -799,6 +749,7 @@
 
     </div>
     <!-- Chat Bot -->
+
 
 
     <script src="src/js/jquery.min.js"></script>
