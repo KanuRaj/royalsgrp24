@@ -80,7 +80,9 @@ $(document).ready(function () {
     function userMsg(message) {
         var userMsgUpperHtml = '<div class="w-100"><div class="media user-msg ml-auto"><div class="media-body"><div class="bg-primary animated fadeIn rounded py-2 px-3 shadow-sm mb-2"><p class="text-small mb-0 text-white">';
         var userMsgLowerHtml = '</div></div></div ></div>';
-        return userMsgUpperHtml + message + userMsgLowerHtml;
+        $(".chat-box").append(userMsgUpperHtml + message + userMsgLowerHtml);
+        $(".modal").animate({ scrollTop: $(".modal-body").height() }, 100);
+
     }
     var id = 0
     function botMsg(message) {
@@ -112,13 +114,14 @@ $(document).ready(function () {
                     $(".typing-animation").fadeOut('slow');
                     $(".typing-animation").remove();
                     $(`#${msgId}`).append(str);
+                    $(".modal").animate({ scrollTop: $(".modal-body").height() }, 100);
 
                     setTimeout(() => {
                         // re-enabling user's send Button
                         $("#sendMsgBtn").removeClass('disabled');
-                    }, (message.length * 1500));
+                    }, (message.length * 1000));
 
-                }, (msg + 1) * 1500);
+                }, (msg + 1) * 1000);
 
             }
         }, 1000);
@@ -126,25 +129,63 @@ $(document).ready(function () {
     }
 
     // calling The Function
-    var chatStarted = false;
+    var userReply, Data = {};
+    var chatStarted = false, nameQ = false, phoneQ = false, budgetQ = false, categoryQ = false;
     $(".chatbotBtn").on("click", () => {
-        // Bot Message
+        // // Bot Message
         if (chatStarted != true) {
             botMsg(['Hello Friend', 'I\'m Kallu Bhaiya', 'From RoyalsGroup24. Let\'s Talk..!', 'What\'s Your Name?']);
             chatStarted = true;
         }
 
         // User Message
-        var userReply;
-        $("#sendMsgBtn").on("click", () => {
+        $("#sendMsgBtn").on("click", function chat() {
             if ($("#userMessage").val()) {
 
-                $(".chat-box").append(userMsg($("#userMessage").val()));
                 userReply = $("#userMessage").val();
+                if (nameQ != true) {
+                    userMsg($("#userMessage").val());
+                    Data.name = userReply;
+                    nameQ = true;
+                }
 
                 $("#userMessage").val('');
 
-                botMsg([`Welcome ${userReply}..!!`, `Which Type Of Property You're Looking For ${userReply.split(" ")[0]}?`]);
+                if (categoryQ != true) {
+                    botMsg([`Welcome ${userReply}..!!`, `Which Type Of Property You're Looking For ${userReply.split(" ")[0]}?`, '<button class="btn btn-yellow w-100 rounded-pill shadow-none chatbotCat">Land / Plot</button><button class="btn btn-light-blue w-100 rounded-pill shadow-none chatbotCat px-2">House / Apartment </button><button class="btn btn-danger w-100 rounded-pill shadow-none chatbotCat">Flat</button>']);
+
+                    $(document).on("click", ".chatbotCat", function (e) {
+                        let userCat = $(this).text();
+                        $(".chatbotCat").addClass('disabled');
+                        userMsg(userCat);
+                        Data.category = userCat;
+                        categoryQ = true;
+                        if (budgetQ != true) {
+                            botMsg(['ohk', 'What budget you\'ve Decided?', '<table class="table table-borderless table-sm text-center"><tr class="py-1"><td><span class="text-white font-weight-bold">From</span></td><td><span class="text-white font-weight-bold">To</span></td></tr><tr class="py-1"><td><input type="number" class="form-control text-center rounded-pill" name="budgetFrom" id="budgetFrom" placeholder="From(₹Lac)"></td><td><input type="number" class="form-control text-center rounded-pill" name="budgetTo" id="budgetTo" placeholder="To(₹Lac)"></td></tr><tr><td colspan="2"><button class="btn btn-warning btn-sm w-100 shadow-sm rounded-pill" id="budgetSubmit">Submit</button></td></tr></table>']);
+                            setTimeout(() => {
+                                $("#budgetSubmit").on("click", function () {
+                                    if ($("#budgetFrom").val() && $("#budgetTo").val()) {
+                                        let budgetRange = `₹ ${$("#budgetFrom").val()} Lacs - ₹ ${$("#budgetTo").val()} Lacs`;
+                                        userMsg(budgetRange);
+                                        $("#budgetSubmit").addClass("disabled");
+                                        Data.budget = budgetRange;
+
+                                        budgetQ = true;
+                                        botMsg(['oh Ok', 'Let\'s Talk More On Phone', 'Give Me You Phone Number...']);
+                                        $("#userMessage").attr('type', 'number');
+                                    }
+                                });
+                            }, 4100);
+                        }
+                    });
+                }
+                else if (phoneQ != true) {
+                    Data.phone = userReply;
+                    userMsg(userReply);
+                    phoneQ = true;
+                    botMsg(['Thanks For Your Time.!', 'Our Team Will Shortly Contact You :-)']);
+
+                }
             }
         })
 
