@@ -4,7 +4,9 @@
     box-sizing: border-box;
     user-select: none;
     -webkit-user-select: none;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Hind Madurai', sans-serif;
+
 }
 html {
     scroll-behavior: smooth;
