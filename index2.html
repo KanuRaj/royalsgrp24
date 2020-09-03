@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopWorld18 - Hub Of Amzing Offers</title>
+    <link rel="stylesheet" href="src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/mdb.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <a class="navbar-brand display-1 font-weight-bold mr-xl-5 ml-xl-5 ml-2" href="index.html">Shop<span
+            class="text-success">World18</span>
+    </a>
+
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white justify-content-sm-start fixed-top px-1 py-1">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand font-weight-bold pl-xl-5 col px-0 mx-0" href="index.html">Shop<span
+                    class="text-success">World18</span>
+            </a>
+
+            <div class="collapse navbar-collapse bg-white p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+                id="navbarSupportedContent">
+                <!-- you account -->
+                <div class="py-3 d-lg-none w-100">
+                    <div class="px-2 w-100 text-center">
+                        <img class="rounded-circle img-fluid"
+                            src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user"
+                            style="width: 40%;">
+                        <p class="text-center py-1">Kallu Bhaiya</p>
+                    </div>
+                    <div class="btn-group col-12 w-100 my-0 rounded-pill" role="group" aria-label="Basic example">
+                        <button type="button"
+                            class="btn btn-danger shadow-none btn-sm px-0 w-100 rounded-pill mx-1">Wishlist<i
+                                class="far fa-heart ml-2"></i></button>
+                        <button type="button"
+                            class="btn btn-primary shadow-none btn-sm px-0 w-100 rounded-pill mx-1">Your
+                            Orders<i class="fa fa-history ml-2"></i></button>
+                    </div>
+                </div>
+                <!-- your account -->
+                <ul class="navbar-nav align-self-stretch mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link rounded-pill pl-3 px-xl-3" href="#">
+                            <i class="fas fa-home"></i>
+                            Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill pl-3 px-xl-3" href="#">
+                            <i class="fas fa-fire"></i>
+                            Trends</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link rounded-pill pl-3 px-xl-3 dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-tag"></i>
+                            Category
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">T-shirts</a>
+                            <a class="dropdown-item" href="#">Hoodies</a>
+                            <a class="dropdown-item" href="#">Jeans</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill pl-3 px-xl-3" href="#">
+                            <i class="fas fa-envelope"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+                <!-- footer -->
+                <div class="d-lg-none w-100 px-0">
+                    <div class="btn-group col-12 w-100 mb-4 px-0" role="group" aria-label="Basic example">
+                        <button type="button" class="btn shadow-none btn-sm px-0 w-100 border">Contact</button>
+                        <button type="button" class="btn shadow-none btn-sm px-0 w-100 border">Help & Support</button>
+                    </div>
+                </div>
+                <!-- footer -->
+
+
+            </div>
+            <div class="input-group form-sm form-2 pl-0 mr-0 col col-lg-3 col-xl-4 py-1 d-none d-lg-flex search-bar">
+                <input class="form-control my-0 py-1 lime-border shadow-none" type="search" placeholder="Search"
+                    aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text lime lighten-2" id="basic-text1"><i class="fas fa-search text-grey"
+                            aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="d-flex" style="font-size: 20px;">
+                <div>
+                    <i class="fas fa-search mr-2 d-lg-none search-btn" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="far fa-heart mx-2 ml-lg-0" aria-hidden="true"></i>
+                </div>
+                <div>
+                    <i class="fas fa-shopping-bag mx-2" aria-hidden="true"></i>
+                </div>
+                <div class="account d-none d-lg-block">
+                    <i class="fas fa-user mx-2" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay"></div>
+
+    <!--/.Navbar -->
+
+
+
+    <!-- GO TO TOP -->
+    <button id="goToTop" class="rounded-circle py-2 px-3 bg-secondary text-white" type="button"><i
+            class="fas fa-chevron-up"></i></button>
+    <!-- GO TO TOP -->
+
+
+    <!-- PreLoader -->
+    <div id="preloader"></div>
+    <!-- Preloader -->
+
+
+
+    <div class="container-fluid no-padding">
+        <div class="row no-gutters pt-lg-5 px-2 px-lg-0 peach-gradient">
+
+            <div class="col-12 px-3 px-lg-4 py-2">
+                <div class="bg-white shadow py-5 px-md-3 px-1 my-2 rounded-lg row">
+                    <div class="col-5 col-md-4 col-lg-3 mx-auto d-flex justify-content-center align-items-center">
+                        <img class="rounded-circle img-fluid"
+                            src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user"
+                            style="width: 80%;">
+                    </div>
+                    <div class="col-12 col-lg-8 mx-auto">
+                        <h1 class="h1-responsive col-lg-10 text-center my-4">Welcome Back Kallu Bhaiya..!</h1>
+                        <div class="row no-padding no-gutters">
+                            <div class="col-12 mx-auto my-2 col-md-6">
+                                <div class="orange mx-auto mx-md-auto text-white rounded-pill d-flex justify-content-around align-items-center"
+                                    style="width: fit-content;min-width: 240px;">
+                                    <div class="rounded-pill px-4 py-2 mr-auto indigo text-white">
+                                        <i class="fas fa-user mr-2"></i>
+                                        <span>Team</span>
+                                    </div>
+                                    <p class="m-0 px-4">14 Members</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mx-auto my-2 col-md-6">
+                                <div class="orange mx-auto text-white rounded-pill d-flex justify-content-around align-items-center"
+                                    style="width: fit-content;min-width: 240px;">
+                                    <div class="rounded-pill px-4 py-2 mr-auto indigo text-white">
+                                        <i class="fas fa-gift mr-2"></i>
+                                        <span>Bonus</span>
+                                    </div>
+                                    <p class="m-0 px-4">₹ 27,780/-</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mx-auto my-2 col-md-6">
+                                <div class="orange mx-auto mx-md-auto text-white rounded-pill d-flex justify-content-around align-items-center"
+                                    style="width: fit-content;min-width: 240px;">
+                                    <div class="rounded-pill px-4 py-2 mr-auto indigo text-white">
+                                        <i class="fas fa-rupee-sign mr-2"></i>
+                                        <span>Total</span>
+                                    </div>
+                                    <p class="m-0 px-4">₹ 88,567/-</p>
+                                </div>
+                            </div>
+                            <div class="col-12 mx-auto my-2 col-md-6">
+                                <div class="orange mx-auto text-white rounded-pill d-flex justify-content-around align-items-center"
+                                    style="width: fit-content;min-width: 240px;">
+                                    <div class="rounded-pill px-4 py-2 mr-auto indigo text-white">
+                                        <i class="fas fa-wallet mr-2"></i>
+                                        <span>Wallet</span>
+                                    </div>
+                                    <p class="m-0 px-4">₹ 5000/-</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <table class="col-12 col-lg-8 mx-auto table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="orange text-white rounded-pill d-flex justify-content-around align-items-center"
+                                            style="width: fit-content;">
+                                            <div class="rounded-pill px-4 py-2 indigo text-white">
+                                                <i class="fas fa-user mr-2"></i>
+                                                <span>Team</span>
+                                            </div>
+                                            <p class="m-0 px-4">14 Members</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="orange text-white rounded-pill d-flex justify-content-around align-items-center"
+                                            style="width: fit-content;">
+                                            <div class="rounded-pill px-4 py-2 indigo text-white">
+                                                <i class="fas fa-gift mr-2"></i>
+                                                <span>Bonus</span>
+                                            </div>
+                                            <p class="m-0 px-4">₹ 27,780/-</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="orange text-white rounded-pill d-flex justify-content-around align-items-center"
+                                            style="width: fit-content;">
+                                            <div class="rounded-pill px-4 py-2 indigo text-white">
+                                                <i class="fas fa-user mr-2"></i>
+                                                <span>Team</span>
+                                            </div>
+                                            <p class="m-0 px-4">14 Members</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="orange text-white rounded-pill d-flex justify-content-around align-items-center"
+                                            style="width: fit-content;">
+                                            <div class="rounded-pill px-4 py-2 indigo text-white">
+                                                <i class="fas fa-user mr-2"></i>
+                                                <span>Team</span>
+                                            </div>
+                                            <p class="m-0 px-4">14 Members</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 8 mx-auto my-2 l-lg-6 px-lg-3">
+                <div class="card py-3 mx-lg-auto -2 rounded-lg">
+                    <h2
+                        class="h2-responsive text-center mb-3 purple-gradient col-7 mx-auto rounded-pill text-white py-2 font-weight-bold">
+                        THIS
+                        MONTH
+                    </h2>
+                    <hr>
+                    <table class="table table-borderless table-sm col-12">
+                        <tr>
+                            <td>
+                                <div class="text-center mx-auto"
+                                    style="width:fit-content;border-bottom:5px solid #f97068">
+                                    <p>Total Joinings</p>
+                                    <p class="h1-responsive">24</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center mx-auto"
+                                    style="width:fit-content;border-bottom:5px solid #f97068">
+                                    <p>Total Earnings</p>
+                                    <p class="h1-responsive">₹30,500</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 8 mx-auto my-2 l-lg-6 px-lg-3">
+                <div class="card py-3 mx-lg-auto -2 rounded-lg">
+                    <h2
+                        class="h2-responsive text-center mb-3 purple-gradient col-7 mx-auto rounded-pill text-white py-2 font-weight-bold">
+                        TOTAL
+                    </h2>
+                    <hr>
+                    <table class="table table-borderless table-sm col-12">
+                        <tr>
+                            <td>
+                                <div class="text-center mx-auto"
+                                    style="width:fit-content;border-bottom:5px solid #f97068">
+                                    <p>Total Joinings</p>
+                                    <p class="h1-responsive">144</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-center mx-auto"
+                                    style="width:fit-content;border-bottom:5px solid #f97068">
+                                    <p>Total Earnings</p>
+                                    <p class="h1-responsive">₹1,60,500</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-12 px-2 py-3">
+                <div class="rounded shadow bg-white">
+                    <h2 class="h2-reponsive p-3">Your Joinings</h2>
+                    <div class="messages-box">
+                        <div class="list-group rounded-0">
+
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action list-group-item-light rounded-0">
+                                <div class="media"><img
+                                        src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg"
+                                        alt="user" width="50" class="rounded-circle">
+                                    <div class="media-body ml-4">
+                                        <div class="d-flex align-items-center justify-content-between mb-1">
+                                            <h6 class="mb-0">Suresh Chaudhary</h6><small
+                                                class="small font-weight-bold">14
+                                                Dec</small>
+                                        </div>
+                                        <p class="font-italic text-muted mb-0 text-small">
+                                            Commission : ₹1560/-
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer font-small cyan darken-3">
+
+            <!-- Footer Elements -->
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row">
+
+                    <!-- Grid column -->
+                    <div class="col-md-12 py-3">
+                        <div class="mb-5 flex-center">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic mx-md-3">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic mx-md-3">
+                                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!-- Google +-->
+                            <a class="gplus-ic mx-md-3">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic mx-md-3">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic mx-md-3">
+                                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            </a>
+                            <!--Pinterest-->
+                            <a class="pin-ic mx-md-3">
+                                <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+            <!-- Footer Elements -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="https://kanuraj.github.io/royalsgrp24"> ShopWorld18.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+        <!-- Footer -->
+
+
+        <script src="src/js/jquery.min.js"></script>
+        <script src="src/js/bootstrap.min.js"></script>
+        <script src="src/js/mdb.min.js"></script>
+        <script src="src/js/script.js"></script>
+</body>
+
+</html>
